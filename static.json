@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "rettemp"
+      "X-Author": "rettemp",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
