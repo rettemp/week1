@@ -7,7 +7,7 @@
         }
     },
     "routes": {
-        "/login/**": "rettemp",
+        "/login/**": "login.html",
         "/sample/**": "plain"
     }
 }
