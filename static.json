@@ -1,8 +1,13 @@
 {
-  "headers": {
-    "/*": {
-      "X-Author": "rettemp",
-      "Access-Control-Allow-Origin": "*"
+    "headers": {
+        "/*": {
+            "X-Author": "rettemp",
+            "Content-Type": "text/plain; charset=UTF-8 ",
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    "routes": {
+        "/login/**": "rettemp",
+        "/sample/**":
     }
-  }
 }
