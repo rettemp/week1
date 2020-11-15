@@ -1,13 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
+    <title>Fetch Test</title>
 </head>
 
 <body>
     <form action="#">
         <input type="text" id="inp" />
-        <button id="bt" onclick="doit">Button</button>
+        <button id="bt" onclick="doit()">Button</button>
     </form>
 </body>
 
@@ -18,7 +19,6 @@
         var val = document.getElementById('inp').value;
         fetch(val)
             .then((response) => {
-                console.log(response);
                 document.getElementById('inp').innerHTML = response.text();
             });
     }
