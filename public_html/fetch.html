@@ -19,7 +19,10 @@
         var val = document.getElementById('inp').value;
         fetch(val)
             .then((response) => {
-                document.getElementById('inp').innerHTML = response.text();
+                response.text().then(text => {
+                    console.log(text);
+                    document.getElementById('inp').value = text;
+                });
             });
     }
 </script>
